@@ -152,7 +152,7 @@ const WaterSphere: FC<WaterSphereProps> = props => {
                 </div>
                 <div className={styles.text} style={{ width: height }}>
                     {title && <span>{title}</span>}
-                    <span className={styles.perc}>{percent}%</span>
+                    <span className={styles.perc}>{percent.toFixed(2)}%</span>
                     <h5>占比</h5>
                 </div>
             </div >

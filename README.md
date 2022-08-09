@@ -26,8 +26,4 @@ import { WaterSphere } from "canvas-design-ui";
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- |--- | --- |
 | height | 水球图canvas高度 | number | - |
-| percent | 占比 | number | - |
-
-
-
-
+| percent | 占比(保留两位小数) | number | - |
