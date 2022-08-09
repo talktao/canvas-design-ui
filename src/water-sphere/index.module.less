@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .waterWave {
+        position: relative;
+
+        .waterWaveCanvasWrapper {
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            border-radius: 50%;
+            background-color: #f7f7f7;
+        }
+
+        .text {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: PingFangSC-Semibold;
+
+            .perc {
+                color: #002EFF;
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            h5 {
+                color: #002EFF;
+                font-size: 14px;
+            }
+
+            span {
+                color: black;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
