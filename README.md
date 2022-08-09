@@ -22,12 +22,11 @@ import { WaterSphere } from "canvas-design-ui";
 
 <WaterSphere height={161} percent={75.888} />
 
+```
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- |--- | --- |
 | height | 水球图canvas高度 | number | - |
 | percent | 占比 | number | - |
-
-```
 
 
 
