@@ -35,16 +35,16 @@ import { WaterSphere } from "canvas-design-ui";
 </WaterSphereDiagram>
 
 ```
-### 属性
-| 属性 | 说明 | 类型 | 默认值 |
+### Props
+| Name | Description | Type | Default |
 | --- | --- |--- | --- |
-| height | 水球图canvas高度 | number | 160 |
-| percent | 占比 | number | - |
+| height | water-sphere canvas height | number | 160 |
+| percent | Percent of the water sphere | number | - |
 | gradientColorData | 渐变色数组 | Array | [[0, '#ffffff'], [0.5, '#00EDFF'], [1, '#002EFF']]|
-| children | reactNode | React.ReactNode | - |
+| children | Customized information | React.ReactNode | - |
 
-### CSS变量
-| 属性 | 说明 | 默认值 | 全局变量 |
+### CSS Variables
+| Name | Description | Default | Global |
 | --- | --- |--- | --- |
-| --bg-color | 水球图背景色 | #f7f7f7 | - |
-| --font-color | 字体默认色 | #002EFF | - |
+| --bg-color | Color of the canvasBg | #f7f7f7 | - |
+| --font-color | Color of the font | #002EFF | - |
