@@ -1,43 +1,36 @@
+@class-prefix-water-sphere: ~'cdu-water-sphere';
+
+.@{class-prefix-water-sphere} {
+    --bg-color: '#f7f7f7';
+    --font-color: '#002EFF';
+}
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
 
-    .waterWave {
+    .content {
         position: relative;
+        margin: auto;
 
-        .waterWaveCanvasWrapper {
+        .canvas {
             transform: scale(0.5);
             transform-origin: 0 0;
             border-radius: 50%;
-            background-color: #f7f7f7;
+            background-color: var(--bg-color);
         }
 
-        .text {
+        .info {
             position: absolute;
-            top: 40%;
-            left: 0;
             width: 100%;
+            top: 50%;
             text-align: center;
             font-family: PingFangSC-Semibold;
-
-            .perc {
-                color: #002EFF;
-                font-size: 26px;
-                line-height: 32px;
-            }
-
-            h5 {
-                color: #002EFF;
-                font-size: 14px;
-            }
-
-            span {
-                color: black;
-                font-size: 14px;
-                line-height: 22px;
-            }
+            font-size: 20px;
+            color: var(--font-color);
+            transform: translate(0, -50%);
         }
     }
 }

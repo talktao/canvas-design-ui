@@ -1,15 +1,21 @@
 import React, { FC, useEffect, useRef, useState } from "react";
+import { NativeProps } from '../utils/native-props';
 import styles from './index.module.less';
 
 type WaterSphereProps = {
     height: number;
-    title?: React.ReactNode;
-    color?: string;
     percent: number;
-};
+    gradientColorData?: [];
+    children?: React.ReactNode;
+} & NativeProps<'--font-color' | '--bg-color'>;
 
 const WaterSphere: FC<WaterSphereProps> = props => {
-    let { height = 160, title, percent = 75.888, color = "#002EFF" } = props;
+    let {
+        height = 160,
+        percent,
+        style,
+        gradientColorData = [[0, '#ffffff'], [0.5, '#00EDFF'], [1, '#002EFF']],
+    } = props;
 
     const [radio, setRadio] = useState(1);
     let root = useRef<any>(null);
@@ -47,7 +53,7 @@ const WaterSphere: FC<WaterSphereProps> = props => {
         const canvasWidth = canvas.width;
         const canvasHeight = canvas.height;
         const radius = canvasWidth / 2;
-        const lineWidth = 2;
+        const lineWidth = 0;
         const cR = radius - lineWidth;
 
         ctx.beginPath();
@@ -87,9 +93,18 @@ const WaterSphere: FC<WaterSphereProps> = props => {
             ctx.lineTo(startPoint[0], startPoint[1]);
 
             const gradient = ctx.createLinearGradient(0, 0, 0, canvasHeight);
-            gradient.addColorStop(0, "#ffffff");
-            gradient.addColorStop(0.5, "#00EDFF");
-            gradient.addColorStop(1, "#002EFF");
+
+            // 遍历渐变色
+            (() => {
+
+                if (!ctx) {
+                    return;
+                }
+                const addColorStop = gradientColorData.map(item => {
+                    return gradient.addColorStop(item[0], item[1]);
+                });
+                return addColorStop;
+            })();
 
             ctx.fillStyle = gradient;
             ctx.fill();
@@ -133,28 +148,21 @@ const WaterSphere: FC<WaterSphereProps> = props => {
                 sp += 0.07;
                 drawSin();
             }
-            // drawSin();
             timer.current = window.requestAnimationFrame(render);
         };
         render();
     };
 
     return (
-        <div className={styles.main}>
-            <div className={styles.waterWave} ref={root} style={{ transform: `scale(${radio})` }}  >
-                <div style={{ width: height, height: height }}>
-                    <canvas
-                        className={styles.waterWaveCanvasWrapper}
-                        ref={node}
-                        width={height * 2}
-                        height={height * 2}
-                    />
-                </div>
-                <div className={styles.text} style={{ width: height }}>
-                    {title && <span>{title}</span>}
-                    <span className={styles.perc}>{percent.toFixed(2)}%</span>
-                    <h5>占比</h5>
-                </div>
+        <div className={styles.main} style={style}>
+            <div className={styles.content} ref={root} style={{ width: height, height: height, transform: `scale(${radio})` }}  >
+                <canvas
+                    className={styles.canvas}
+                    ref={node}
+                    width={height * 2}
+                    height={height * 2}
+                />
+                <div className={styles.info}>{props.children}</div>
             </div >
         </div>
 
