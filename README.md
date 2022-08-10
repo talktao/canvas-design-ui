@@ -5,7 +5,7 @@ NPM package: https://www.npmjs.com/package/canvas-design-ui
 
 Git repo: https://github.com/talktao/canvas-design-ui
 
-f it is helpful to you, please help me to order one 🌟, Thanks !
+If it is helpful to you, please help me to order one on GitHub 🌟, Thanks !
 
 # Installation
 With NPM
