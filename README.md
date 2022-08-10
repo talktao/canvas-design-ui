@@ -23,8 +23,12 @@ With YARN
 // 导入
 import { WaterSphere } from "canvas-design-ui";
 
-<WaterSphereDiagram height={180} percent={75.666} style={{ '--bg-color': '#f7f7f7', '--font-color': '#002EFF' }}>
-    <div>75.666%</div>
+<WaterSphereDiagram 
+    height={180} 
+    percent={78.888} 
+    style={{ '--bg-color': '#f7f7f7', '--font-color': '#002EFF' }}
+>
+    <div>78.888%</div>
     <div style={{ fontSize: '14px' }}>占比</div>
 </WaterSphereDiagram>
 
