@@ -5,7 +5,7 @@ import styles from './index.module.less';
 type WaterSphereProps = {
     height: number;
     percent: number;
-    gradientColorData?: [];
+    gradientColorData: any[];
     children?: React.ReactNode;
 } & NativeProps<'--font-color' | '--bg-color'>;
 
