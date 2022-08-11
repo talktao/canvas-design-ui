@@ -21,7 +21,7 @@ With YARN
   - [water-sphere](#water-sphere)
     - [Props](#props)
     - [CSS Variables](#css-variables)
-  - [ProgressCircle](#progresscircle)
+  - [progress-circle](#progress-circle)
     - [Props](#props-1)
     - [CSS Variables](#css-variables-1)
 
@@ -56,7 +56,7 @@ import { WaterSphere } from "canvas-design-ui";
 | --bg-color   | Color of the canvasBg | #f7f7f7 | -      |
 | --font-color | Color of the font     | #002EFF | -      |
 
-## ProgressCircle
+## progress-circle
 ![图片](https://shenshipin-1253925857.cos.ap-guangzhou.myqcloud.com/2022/08/11/MHRw8SQmA4N9eVZidW6K1KIR8qTng3qcVnkzD5GCsY8rePFV99U9qdwtjP8x7hGm_WGiffS4YWechatIMG385.jpeg?imageMogr2/format/webp/thumbnail/!100p)
 
 ```js
