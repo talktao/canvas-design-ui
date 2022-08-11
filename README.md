@@ -1,5 +1,5 @@
 # canvas-design-ui
-一个基于canvas和react的ui组件
+A UI component based on canvas and react
 
 NPM package: https://www.npmjs.com/package/canvas-design-ui
 
@@ -40,7 +40,7 @@ import { WaterSphere } from "canvas-design-ui";
 | --- | --- |--- | --- |
 | height | water-sphere canvas height | number | 160 |
 | percent | Percent of the water sphere | number | - |
-| gradientColorData | 渐变色数组 | Array | [[0, '#ffffff'], [0.5, '#00EDFF'], [1, '#002EFF']]|
+| gradientColorData | Water ball gradient | Array | [[0, '#ffffff'], [0.5, '#00EDFF'], [1, '#002EFF']]|
 | children | Customized information | React.ReactNode | - |
 
 ### CSS Variables
