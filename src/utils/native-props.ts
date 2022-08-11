@@ -1,4 +1,4 @@
-import React, { AriaAttributes, ReactElement } from 'react';
+import React, { AriaAttributes } from 'react';
 import type { CSSProperties } from 'react';
 
 export type NativeProps<S extends string = never> = {
