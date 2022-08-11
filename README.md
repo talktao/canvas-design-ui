@@ -22,7 +22,6 @@ With YARN
 ![图片](https://shenshipin-1253925857.cos.ap-guangzhou.myqcloud.com/2022/08/10/WmbKpteXJ1ZqCB3cPwwKsSX5YgcxRZYISoDZKWh38SHB5pFGi0TYVQbAU4c4FoPw_MdC8FTzJWechatIMG382.jpeg?imageMogr2/format/webp/thumbnail/!100p)
 
 ```js
-// 导入
 import { WaterSphere } from "canvas-design-ui";
 
 <WaterSphereDiagram 
