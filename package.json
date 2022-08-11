@@ -2,7 +2,7 @@
 	"name": "canvas-design-ui",
 	"version": "1.1.4",
 	"repository": "https://github.com/talktao/canvas-design.git",
-	"author": "talktao <1416249906@qq.com>",
+	"author": "talktao",
 	"license": "MIT",
 	"module": "./dist/es/index.js",
 	"main": "./dist/lib/index.js",
