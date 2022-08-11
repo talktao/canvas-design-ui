@@ -57,7 +57,7 @@ import { WaterSphere } from "canvas-design-ui";
 | --font-color | Color of the font     | #002EFF | -      |
 
 ## ProgressCircle
-![图片]https://shenshipin-1253925857.cos.ap-guangzhou.myqcloud.com/2022/08/11/MHRw8SQmA4N9eVZidW6K1KIR8qTng3qcVnkzD5GCsY8rePFV99U9qdwtjP8x7hGm_WGiffS4YWechatIMG385.jpeg?imageMogr2/format/webp/thumbnail/!100p
+![图片](https://shenshipin-1253925857.cos.ap-guangzhou.myqcloud.com/2022/08/11/MHRw8SQmA4N9eVZidW6K1KIR8qTng3qcVnkzD5GCsY8rePFV99U9qdwtjP8x7hGm_WGiffS4YWechatIMG385.jpeg?imageMogr2/format/webp/thumbnail/!100p)
 
 ```js
 import { ProgressCircle } from "canvas-design-ui";
