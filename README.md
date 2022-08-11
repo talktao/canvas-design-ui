@@ -15,7 +15,7 @@ With YARN
 > yarn add canvas-design-ui
 
 # Usage
-
+> Read the Source luke!
 
 ## water-sphere
 
