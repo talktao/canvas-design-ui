@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from "react";
-import { NativeProps } from '../utils/native-props';
+import { NativeProps } from '../../utils/native-props';
 import styles from './index.module.less';
 
 type WaterSphereProps = {
