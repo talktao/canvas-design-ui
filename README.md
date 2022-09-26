@@ -87,3 +87,19 @@ import { ProgressCircle } from "canvas-design-ui";
 | --size        | Width and height of the canvas | 80px    | -      |
 | --track-color | Color of the track             | #e5e5e5 | -      |
 | --track-width | Width of the line              | 4px     | -      |
+
+## figure-code
+![图片](https://shenshipin-1253925857.cos.ap-guangzhou.myqcloud.com/2022/09/26/oMj4LCmtLzT9OAg9FnXWX2ZQtrYDZ3SzcVnKuIql4w3ppgG9HqDIzPaZYpmdgUhr_6bhzM7caWechatIMG585.jpeg?imageMogr2/format/webp/thumbnail/!100p)
+
+```js
+import { FigureCode } from "canvas-design-ui";
+
+<FigureCode />
+```
+
+### Props
+| Name    | Description                               | Type             | Default |
+| ------- | ----------------------------------------- | ---------------- | ------- |
+| width   | with of canvas                            | number           | 80      |
+| height  | height of canvas                          | number           | 40      |
+| onCheck | Return the value of the verification code | (i:string)=>void |         |
