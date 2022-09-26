@@ -18,12 +18,15 @@ With YARN
 > Read the Source luke!
 
 ## 目录
+  - [目录](#目录)
   - [water-sphere](#water-sphere)
     - [Props](#props)
     - [CSS Variables](#css-variables)
   - [progress-circle](#progress-circle)
     - [Props](#props-1)
     - [CSS Variables](#css-variables-1)
+  - [figure-code](#figure-code)
+    - [Props](#props-2)
 
 ## water-sphere
 
